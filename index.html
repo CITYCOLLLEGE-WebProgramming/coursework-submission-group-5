@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touristic Destination</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="plan.html">Plan Your Visit</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li>
+                    <form id="search-form">
+                        <input type="text" id="search-bar" placeholder="Search...">
+                        <button type="submit">Search</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome" class="reveal">
+            <h1>Welcome to Our Destination</h1>
+            <p id="discover-p"> Discover the beauty and vibrancy of our wonderful destination.</p>
+            <button><a href="attractions.html">Explore Now</a></button>
+        </section>
+
+        <section id="highlights" class="reveal">
+            <h2>Top Attractions</h2>
+            <div class="carousel">
+                <img src="images/Eiffel-Tower-Paris.jpg" alt="Highlight 1">
+                <img src="images/Leaning-Tower-of-Pisa-Italy.jpg" alt="Highlight 2">
+                <img src="images/colloseum.jpg" alt="Highlight 3">
+            </div>
+        </section>
+
+        <section id="why-visit" class="reveal">
+            <h2>Why Visit Us?</h2>
+            <p>Learn what makes our destination unique and special.</p>
+            <!-- Add testimonials here -->
+        </section>
+
+        <section id="news" class="reveal">
+            <h2>Latest News/Events</h2>
+            <!-- Add news and events here -->
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="/api/visitors" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Touristic Destination. All rights reserved.</p>
+    </footer>
+</body>
+</html>
